@@ -1,16 +1,19 @@
+# Weweb ScriptTag Embedder
 
-<a name="readmemd"></a>
+## Adding To Weweb
 
-Template for making easy-to-work-with tempates
-
-# ts-template
-
-## Usage
-
-1. [Copy this template](https://github.com/rhdeck/ts-template/)
-2. Clone to a local directory (eg `git clone https://github.com/me/my-repository/ && cd my-repository`)
-3. Run `yarn && yarn setup` to initialize the node package (Get rid of template strings - and this readme!)
-4. Happy Coding!
+1. Open Weweb
+2. Click on the puzzle piece icon
+3. Click "Plugins"
+4. Click "NPM"
+5. Search for `scripttag`
+6. Click Plus - you're done! 
+   
+## Adding any Embed to your site
+1. Create any element
+2. Give it a class of "scripttag"
+3. Go to custom attributes and give it a "scripttag-src" of your target URL
+4. Watch it appear on your page!
 
 ## Useful Scripts
 

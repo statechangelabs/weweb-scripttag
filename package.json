@@ -1,27 +1,19 @@
 {
-  "name": "template",
-  "private": true,
+  "name": "@statechange/scripttag",
+  "private": false,
   "version": "1.0.0",
-  "description": "",
+  "description": "Easily connect weweb to scripttag",
   "main": "lib/index.js",
   "bin": "lib/bin.js",
   "scripts": {
     "setup": "./init-template.js",
     "pre-commit": "(git-branch-is --not main || (set -u && echo $ALLOWMAIN)) && yarn test",
     "test": "tsc --noEmit",
-    "build": "tsc && chmod +x lib/bin.js && yarn pack -f package.tgz",
-    "docs:bin": "mkdir docstemp ; (commanderdoc markdown lib/bin.js -o docstemp/__cli.md --cli-name \"npx `jq -r .name package.json`\") ; ",
-    "docs:lib": "typedoc --theme markdown --readme none --includeVersion --out docstemp src/ && rm README.md ; mv docstemp/README.md docstemp/_library.md",
-    "docs:compile": "mkdir docstemp ; cp TOP.md docstemp/README.md ; concat-md docstemp > README.md && rm -rf docstemp",
-    "docs": "rm -rf docstemp && yarn docs:lib && yarn docs:bin && yarn docs:compile",
-    "prepublishOnly": "yarn build && yarn docs && git commit README.md -m \"docs: updating docs\" && git push",
+    "build": "tsc && yarn pack -f package.tgz",
     "watch": "livelink watch",
     "prepare": "install-peers"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rhdeck/base.git"
-  },
+  "repository": "git+https://github.com/statechangelabs/weweb-scriptag.git",
   "author": "Ray Deck",
   "license": "MIT",
   "bugs": {
