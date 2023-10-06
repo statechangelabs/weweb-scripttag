@@ -1,7 +1,7 @@
 {
   "name": "@statechange/scripttag",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easily connect weweb to scripttag",
   "main": "lib/index.js",
   "bin": "lib/bin.js",
