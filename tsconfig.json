@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "./lib/", // path to output directory
+    "outDir": "./umd/", // path to output directory
     "sourceMap": true, // allow sourcemap support
-    "strict": true, // enable strict null checks as a best practice
-    "module": "commonjs", // specify module code generation
+    "strict": true, // enable sstrict null checks as a best practice
+    "module": "UMD", // specify module code generation
     "target": "es2019", // specify ECMAScript target version
     "allowJs": true, // allow a partial TypeScript and JavaScript codebase,
     "declaration": true,

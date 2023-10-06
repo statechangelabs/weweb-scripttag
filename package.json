@@ -3,8 +3,7 @@
   "private": false,
   "version": "1.0.1",
   "description": "Easily connect weweb to scripttag",
-  "main": "lib/index.js",
-  "bin": "lib/bin.js",
+  "main": "umd/index.js",
   "scripts": {
     "setup": "./init-template.js",
     "pre-commit": "(git-branch-is --not main || (set -u && echo $ALLOWMAIN)) && yarn test",
@@ -39,7 +38,8 @@
   },
   "files": [
     "src",
-    "lib"
+    "dist",
+    "umd"
   ],
   "dependencies": {
     "commander": "^6.2.1",
